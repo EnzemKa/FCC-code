@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<head>
+	<title>Story of Elon Musk</title>
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			color: #333;
+		}
+		#main {
+			width: 100%;
+		    display: grid;
+		    grid-template-columns: auto;
+		    grid-template-rows: auto auto;
+		    grid-template-areas: 
+		    	"header"
+		    	"content"
+		    	"footer";
+		}
+		#img-div {
+			position: relative;
+			grid-area: header;
+			overflow: hidden;
+			height: 100vh;
+		}
+		#inside-img-div {
+			position: absolute;
+			width: 100%;
+			height: 100vh;
+		}
+		img {
+			position: absolute;
+			max-width: 100%;
+			width: 100vw;
+			margin: auto;
+			height: auto; /* set 100vh to fill a full heigth */
+		    object-fit: cover;
+		    object-position: right center;
+		}
+		#inside-img-div2 {
+			position: relative;
+			width: 100%;
+			height: 300px;
+			margin-top: 5%;
+		}
+		#title {
+		    position: relative;
+		    display: inline-block;
+		    background: #de6479;
+		    color: #fff;
+		    margin: 3% 0 6% 17%;
+		    font-size: 4em;
+		    padding: 0 20px;
+		}
+		#img-caption {
+		    max-width: 400px;
+		    color: #fff;
+		    text-align: center;
+		    font-size: 1.8em;
+		    margin: 0 0 0 21%;
+		}
+		#tribute-info {
+			grid-area: content;
+		    display: grid;
+		    grid-template-columns: repeat(auto-fit, minmax(350px, 6fr));
+		    font-size: 18px;
+		    padding: 15px;
+		    background-color: #eee;
+		}
+		.item {
+			margin: 15px;
+			padding: 15px;
+			border-radius: 10px; 
+			background-color: #fff;
+		}
+		.item h2 {
+			color: #de6479;
+		}
+		#tribute-link {
+			grid-area: footer;
+			text-align: center;
+			padding: 20px 0;
+			font-size: 18px;
+			background-color: #aaa;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div id="img-div">
+			<div id="inside-img-div">
+				<img id="image" src="https://kaz.tengrinews.kz/userdata/news_kk/2018/news_288595/photo_46419.jpg">
+			</div>
+			<div id="inside-img-div2">
+				<h1 id="title">Elon Reeve Musk</h1>
+				<p id="img-caption"><i>'' The absence of any noticeable life may be an argument in favour of us being in a simulation... ''</i></p>	
+			</div>
+		</div>
+
+		<div id="tribute-info">
+			<div class="item"><h2>Zip2</h2><hr>In 1995, Musk and his brother, Kimbal, started Zip2, a web software company, with money raised from a small group of angel investors. The company developed and marketed an Internet "city guide" for the newspaper publishing industry. Musk obtained contracts with The New York Times and the Chicago Tribune and persuaded the board of directors to abandon plans for a merger with CitySearch. While at Zip2, Musk wanted to become CEO; however, none of the board members would allow it.</div>
+			<div class="item"><h2>X.com and PayPal</h2><hr>In March 1999, Musk co-founded X.com, an online financial services and e-mail payment company, with US$10 million from the sale of Zip2. One year later, the company merged with Confinity, which had a money-transfer service called PayPal. The merged company focused on the PayPal service and was renamed PayPal in 2001. Musk was ousted in October 2000 from his role as CEO (although he remained on the board) due to disagreements with other company leadership, notably over his desire to move PayPal's Unix-based infrastructure to Microsoft Windows.<br>
+			In July 2017, Musk purchased the domain x.com from PayPal for an undisclosed amount stating that it has "great sentimental value" to him.</div>
+			<div class="item"><h2>SpaceX</h2><hr>In 2001, Musk conceptualized "Mars Oasis", a project to land a miniature experimental greenhouse on Mars, containing food crops growing on Martian regolith, in an attempt to regain public interest in space exploration. Musk founded Space Exploration Technologies, or SpaceX, in May 2002. Musk is chief executive officer (CEO) and chief technology officer (CTO) of the Hawthorne, California-based company.<br>
+			Musk's goal is to reduce the cost of human spaceflight by a factor of 10. In a 2011 interview, he said he hopes to send humans to Mars' surface within 10–20 years. In Ashlee Vance's biography, Musk stated that he wants to establish a Mars colony by 2040, with a population of 80,000.</div>
+			<div class="item"><h2>Tesla</h2><hr>Tesla, Inc. (originally Tesla Motors) was incorporated in July 2003 by Martin Eberhard and Marc Tarpenning, who financed the company until the Series A round of funding.<br>
+			Both men played active roles in the company's early development prior to Elon Musk's involvement. Musk led the Series A round of investment in February 2004, joining Tesla's board of directors as its chairman. Musk took an active role within the company and oversaw Roadster product design at a detailed level, but was not deeply involved in day-to-day business operations.</div>
+		</div>
+		<a id="tribute-link" target="_blank" href="https://en.wikipedia.org/wiki/Elon_Musk">Full story</a>
+	</div>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

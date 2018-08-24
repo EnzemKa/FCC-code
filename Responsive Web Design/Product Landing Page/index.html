@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fanny Raccoons</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<style>
+		#header {
+			height: 50px;
+		}
+		.container-fluid {
+			max-width: 1200px;
+		}
+		.navbar-brand img {
+			margin-top: -4px;
+		}
+		main {
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+	  #box-container {
+	    display: flex;
+	    margin: 10px auto;
+	  }
+	  #video {
+	  	margin: 20px 0;
+	  }
+	  .box {
+	  	position: relative;
+	    flex: 1 1 150px;
+	    margin: 10px;
+	    text-align: center;
+	    border: 0.5px solid #eee;
+	    box-shadow: 1px 1px 1px #ddd;
+	  }
+	  .box img {
+	  	max-width: 100%;
+	  }
+	  .box a {
+	  	position: absolute;
+	    transform: rotate(-90deg);
+	    left: -50px;
+	    top: 65px;
+	    color: #fff;
+	  }
+	  #row {
+	  	margin-left: 0;
+	  	margin-right: 0;
+	  }
+	  .thumbnail img {
+	  	height: 249px;
+	  }
+	  #form {
+	  	max-width: 800px;
+	  	margin: 20px auto;
+	  	padding: 10px;
+	  }
+	  .footer {
+	  	margin: 30px auto 0;
+	  	background-color: #777;
+	  	color: #fff;
+	  	height: 50px;
+	  }
+	  .footer p {
+	  	display: block;
+	    max-width: 800px;
+	    line-height: 50px;
+	    margin: 0 auto;
+	    text-align: right;
+	    padding-right: 10px; 
+	  }
+	  @media (max-width: 766px) {
+	  	#video {
+	  		display: none;
+	  	}
+	  }
+	</style>
+</head>
+<body>
+	<header id="header">
+		<nav class="navbar navbar-default navbar-fixed-top" id="nav-bar">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#">
+		        <img id="header-img" alt="Brand" src="./images/logo.gif">
+		      </a>
+		      <a class="navbar-brand" href="#">Funny raccoons</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#video" class="nav-link">About</a>
+						</li>
+						<li>
+							<a href="#row" class="nav-link">Raccoons</a>
+						</li>
+						<li>
+							<a href="#form" class="nav-link">Form</a>
+						</li>
+					</ul>
+				</div>
+		  </div>
+		</nav>
+	</header>
+	<main>
+
+		
+		<div id="box-container">
+			<div class="box" style="background-color: #d8d21e54">
+				<img src="./images/1.gif" alt="Sweet raccoon">
+				<div class="caption">
+					<h3>Sweet</h3>
+				</div>
+				<a href='https://www.freepik.com/free-vector/funny-raccoon-collection_1048148.htm'>Designed by Freepik</a>
+			</div>
+			<div class="box" style="background-color: #1ed8c754">
+				<img src="./images/2.gif" alt="Music raccoon">
+				<div class="caption">
+					<h3>Music</h3>
+				</div>
+				<a href='https://www.freepik.com/free-vector/funny-raccoon-collection_1048148.htm'>Designed by Freepik</a>
+			</div>
+			<div class="box" style="background-color: #3ad81e54">
+				<img src="./images/3.gif" alt="Selfie raccoon">
+				<div class="caption">
+					<h3>Selfie</h3>
+				</div>
+				<a href='https://www.freepik.com/free-vector/funny-raccoon-collection_1048148.htm'>Designed by Freepik</a>
+			</div>
+		</div>
+
+		<iframe id="video" width="100%" height="480" src="https://www.youtube.com/embed/h3o5pkOSgwc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+		
+
+		<div class="row" id="row">
+		  <div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <img src="./images/raccoon1.jpg" alt="Raccoon #1">
+		      <div class="caption">
+		        <h3>Raccoon #1</h3>
+		        <p>...</p>
+		        <p><a href="#" class="btn btn-primary" role="button">Buy</a> <a href="#" class="btn btn-default" role="button">More..</a></p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <img src="./images/raccoon2.jpg" alt="Raccoon #2">
+		      <div class="caption">
+		        <h3>Raccoon #2</h3>
+		        <p>...</p>
+		        <p><a href="#" class="btn btn-primary" role="button">Buy</a> <a href="#" class="btn btn-default" role="button">More..</a></p>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="col-sm-6 col-md-4">
+		    <div class="thumbnail">
+		      <img src="./images/raccoon3.jpg" alt="Raccoon #3">
+		      <div class="caption">
+		        <h3>Raccoon #3</h3>
+		        <p>...</p>
+		        <p><a href="#" class="btn btn-primary" role="button">Buy</a> <a href="#" class="btn btn-default" role="button">More..</a></p>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</main>
+	<footer>
+		<form id="form" class="form-group" action="https://www.freecodecamp.com/email-submit">
+			<div class="form-group">
+		    <label for="email">Email address</label>
+		    <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+		  </div>
+			<input id="submit" class="btn btn-default" type="submit" value="Get Started"></input>
+		</form>
+		<div class="footer">
+			<p>Copyright 2018, Funny Raccoons</p>
+		</div>
+	</footer>
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
